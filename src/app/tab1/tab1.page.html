@@ -1,0 +1,145 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ΔΙΕΠΑΦΕΣ ΦΟΡΗΤΩΝ ΣΥΣΚΕΥΩΝ
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 12</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="custom-card">
+          <ion-card-header>
+            <ion-card-title>Μάθημα 1</ion-card-title>
+            <ion-card-subtitle>Εισαγωγή</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <iframe width="100%" height="500" src="http://delos.it.auth.gr/opendelos/player?rid=3f8adf2" allowfullscreen></iframe>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="custom-card">
+          <ion-card-header>
+            <ion-card-title>Μάθημα 1</ion-card-title>
+            <ion-card-subtitle>Εισαγωγή</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <iframe width="100%" height="500" src="http://delos.it.auth.gr/opendelos/player?rid=3f8adf2" allowfullscreen></iframe>
+          </ion-card-content>
+        </ion-card>
+        
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="custom-card">
+          <ion-button>Default</ion-button> <ion-button shape="round">Round</ion-button>
+
+          <button ion-button (click)="changeContent()">Change Content</button>
+          <div class="opposite-content">{{ dynamicContent }}</div>
+          <div class="chip-container">
+            <!-- Your ion-chip code here -->
+            <ion-chip class="right-avatar-chip">
+              <ion-label>
+                <div class="chip-name">John Doe</div>
+               <div class="chip-message">Hello, how are you?</div>
+              </ion-label>
+              <ion-avatar>
+                <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+              </ion-avatar>
+            </ion-chip>
+          </div>
+          <div class="chip-container">
+            <!-- Your ion-chip code here -->
+            <ion-chip class="right-avatar-chip">
+              <ion-label>
+                <div class="chip-name">John Doe</div>
+               <div class="chip-message">Hello, how are you?</div>
+              </ion-label>
+              <ion-avatar>
+                <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+              </ion-avatar>
+            </ion-chip>
+          </div>
+          <div class="chip-container">
+            <!-- Your ion-chip code here -->
+            <ion-chip class="right-avatar-chip">
+              <ion-label>
+                <div class="chip-name">John Doe</div>
+               <div class="chip-message">Hello, how are you?</div>
+              </ion-label>
+              <ion-avatar>
+                <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+              </ion-avatar>
+            </ion-chip>
+          </div>
+          <div class="chip-container">
+            <!-- Your ion-chip code here -->
+            <ion-chip class="right-avatar-chip">
+              <ion-label>
+                <div class="chip-name">John Doe</div>
+               <div class="chip-message">Hello, how are you?</div>
+              </ion-label>
+              <ion-avatar>
+                <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+              </ion-avatar>
+            </ion-chip>
+          </div>
+          <div class="chip-container">
+            <!-- Your ion-chip code here -->
+            <ion-chip class="right-avatar-chip">
+              <ion-label>
+                <div class="chip-name">John Doe</div>
+               <div class="chip-message">Hello, how are you?</div>
+              </ion-label>
+              <ion-avatar>
+                <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+              </ion-avatar>
+            </ion-chip>
+          </div>
+          <div class="chip-container">
+            <!-- Your ion-chip code here -->
+            <ion-chip class="right-avatar-chip">
+              <ion-label>
+                <div class="chip-name">John Doe</div>
+               <div class="chip-message">Hello, how are you?</div>
+              </ion-label>
+              <ion-avatar>
+                <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+              </ion-avatar>
+            </ion-chip>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+<ion-content>
+  <ion-button expand="full" (click)="showCard1()">Show Card 1</ion-button>
+  <ion-button expand="full" (click)="showCard2()">Show Card 2</ion-button>
+
+  <ion-card *ngIf="showCard1Flag">
+    <ion-card-header>
+      Card 1
+    </ion-card-header>
+    <ion-card-content>
+      This is the content of Card 1.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="showCard2Flag">
+    <ion-card-header>
+      Card 2
+    </ion-card-header>
+    <ion-card-content>
+      This is the content of Card 2.
+    </ion-card-content>
+  </ion-card>
+</ion-content>

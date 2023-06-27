@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Card Example
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="full" (click)="showCard1()">Show Card 1</ion-button>
+  <ion-button expand="full" (click)="showCard2()">Show Card 2</ion-button>
+
+  <ion-card *ngIf="showCard1Flag">
+    <ion-card-header>
+      <ion-card-title>Card 1</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      This is the content of Card 1.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="showCard2Flag">
+    <ion-card-header>
+      <ion-card-title>Card 2</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      This is the content of Card 2.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
